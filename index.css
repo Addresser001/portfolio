@@ -40,10 +40,10 @@ body{
 }
 
 
-
 .container{
     background-color: black;
     color: white;
+
     
 }
 
@@ -92,11 +92,12 @@ body{
 .self-description{
     box-shadow: 4px 0px 5px rgb(58, 57, 57);
     width: 27%;
-    padding: 20px 0px 60px 20px;
+    padding: 20px 0px 100px 20px;
     position: fixed;
 }
 .self-description img{
     border-radius: 100%;
+    width: 70%;
 }
 .frontend-dev{
     color:rgb(202, 57, 57);
@@ -123,7 +124,6 @@ body{
 
 /* this is the right container */
 .right-container{
-    background-color: hotp;
     margin-top: 10px;
     padding-bottom: 30px;
     
@@ -277,9 +277,9 @@ body{
 
 
 /* Mini laptop view */
-@media(max-width:1439px){
+/* @media(max-width:1439px){ */
     /* this is the left container */
-    .left-container{
+    /* .left-container{
         
     }
     .self-description{
@@ -319,9 +319,9 @@ body{
         overflow: hidden;
         transition-duration: 0.5s;
         transition-timing-function: ease-out;
-    }
+    } */
     
-}
+/* } */
 
 
 
