@@ -1,0 +1,734 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+*:focus{
+    box-shadow: none !important; 
+    border: 0px;  
+    outline: 0px;
+}
+body{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Scroll Bar effect */
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 2px 2px 5px grey; 
+    border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  silver;
+    box-shadow: inset 1px 1px 2px black;
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(48, 47, 47); 
+}
+
+
+
+.container{
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+}
+  
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: silver;
+    border-radius: 100px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 5px;
+    background: black;
+    width: 0%;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* this is the left container */
+.left-container{
+    
+}
+.self-description{
+    box-shadow: 4px 0px 5px rgb(58, 57, 57);
+    width: 29%;
+    padding: 20px 0px 20px 20px;
+    position: fixed;
+}
+.self-description img{
+    border-radius: 100%;
+}
+.frontend-dev{
+    color:rgb(202, 57, 57);
+    padding-top: 20px;
+    letter-spacing: 5px;
+}
+.social-media-icon-container{
+    margin-top: 30px;
+}
+.social-media-icons{
+    font-size: 40px;
+    color: silver;
+    margin-left: 10px;
+    
+}
+
+
+
+
+
+
+
+
+/* this is the right container */
+.right-container{
+    background-color: hotp;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    
+}
+
+.addresser{
+    text-align: right;
+    padding-bottom: 10px;
+    
+}
+.d-block{
+    width: 100%;
+    height: 610px;
+    opacity: 0.5;
+}
+#home-text{
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.about{
+    text-align: center;
+    padding: 50px 10px 10px 10px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    
+}
+.section-header{
+    color: silver;
+    font-size: 40px;
+    text-align: center;
+}
+.about-close{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.about-open{
+    width: 100%;
+    height: 510px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.about p{
+    font-size: 25px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+#about-button{
+    padding: 10px 30px;
+    margin: 20px 0px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+.projects{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 4px double gray;
+}
+.project_set{
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.each-project{
+    width: 49%;
+    height: 200px;
+}
+.each-project a{
+    text-decoration: none;
+}
+.first-project{
+    width: 100%;
+    height: 200px;
+    background-image: url(/images/img-5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second-project{
+    width: 100%;
+    height: 200px;
+    background-image: url(/images/img-6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project_text{
+    opacity: 0;
+    width: 100%;
+    height: 200px;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.project_text:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+.contact-me{
+    margin-top: 50px;
+}
+#form{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.form-input{
+    width: 70%;
+    height: 40px;
+    background-color: black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.form-button{
+    padding: 10px 50px;
+    margin: 20px 0px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
+
+
+
+/* Mini laptop view */
+@media(max-width:1439px){
+    /* this is the left container */
+    .left-container{
+        
+    }
+    .self-description{
+        box-shadow: 4px 0px 5px rgb(58, 57, 57);
+        width: 29%;
+        padding: 20px 0px 130px 10px;
+        position: fixed;
+    }
+    .self-description img{
+        border-radius: 100%;
+        width: 90%;
+    }
+    .self-description h1{
+        font-size: 32px;
+    }
+    .frontend-dev{
+        color:rgb(202, 57, 57);
+        padding-top: 20px;
+        letter-spacing: 2px;
+        font-size: 22px;
+    }
+    .social-media-icon-container{
+        margin-top: 30px;
+    }
+    .social-media-icons{
+        font-size: 47px;
+        color: silver;
+        margin-left: 10px;
+        
+    }
+
+
+
+    .about-open{
+        width: 100%;
+        height: 750px;
+        overflow: hidden;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+    }
+    
+}
+
+
+
+
+
+
+
+/* Tablet view */
+
+@media(max-width:1023px){
+
+    .container{
+        background-color: black;
+        color: white;
+        
+    }
+    
+    .navbar{
+        position: fixed;
+        margin-left: 100px;
+        margin-right: 100px;
+        z-index: 30;
+        background-color: black;
+        opacity: 0.8;
+    }
+    .navbar-brand{
+        color: white !important;
+    }
+    .navbar-toggler{/* this is the nav-bar toggler button which normally display on the mobile view */
+        margin-right: 13px;
+        color: silver !important;
+        background-color: slateblue;
+    }
+    
+    .nav-links{/* it conatains all the links */
+       color: whitesmoke !important;
+       
+    }
+    .nav-item{/* this is the individual "li" tag on the nav bar, which contains its own nav-link */
+        padding: 20px;
+        padding-top: 0px;
+        padding-right: 0px;
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    .nav-link{/*this is the individual link "a" on the nav bar*/
+        color: white !important;
+    }
+    
+    
+    
+    
+    
+    
+    /* this is the left container */
+    .left-container{
+        
+    }
+    .self-description{
+        box-shadow: 4px 0px 5px rgb(58, 57, 57);
+        width: 29%;
+        padding: 20px 0px 30px 10px;
+        position: fixed;
+    }
+    .self-description img{
+        border-radius: 100%;
+        width: 80%;
+    }
+    .self-description h1{
+        font-size: 23px;
+    }
+    .frontend-dev{
+        color:rgb(219, 216, 216);
+        padding-top: 20px;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+    .social-media-icon-container{
+        margin-top: 30px;
+    }
+    .social-media-icons{
+        font-size: 40px;
+        color: silver;
+        margin-left: 10px;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* this is the right container */
+    .right-container{
+        background-color: hotp;
+        margin-top: 10px;
+        padding-bottom: 30px;
+        
+    }
+    
+    .addresser{
+        text-align: right;
+        padding-bottom: 10px;
+        
+    }
+    .d-block{
+        width: 100%;
+        height: 450px;
+        opacity: 0.5;
+    }
+    #home-text{
+        position: relative;
+        bottom: 100px;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    
+
+
+    
+    .about{
+        text-align: center;
+        padding: 50px 10px 10px 10px;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+        
+    }
+    .section-header{
+        color: silver;
+        font-size: 30px;
+        text-align: center;
+    }
+    .about-open{
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+    }
+    .about p{
+        font-size: 18px;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+    #about-button{
+        padding: 10px 30px;
+        margin: 20px 0px;
+        border: 1px solid white;
+        color: white;
+        background-color: black;
+    }
+    
+  
+    
+    
+    .projects{
+        margin-top: 40px;
+    }
+    .project_set{
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .each-project{
+        width: 47%;
+        height: 200px;
+    }
+    .each-project a{
+        text-decoration: none;
+    }
+    .first-project{
+        width: 100%;
+        height: 200px;
+        background-image: url(/images/img-5.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .second-project{
+        width: 100%;
+        height: 200px;
+        background-image: url(/images/img-6.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .project_text{
+        opacity: 0.7;
+        width: 100%;
+        height: 200px;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+    }
+    .project_text:hover{
+        opacity: 0.7;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile view */
+@media(max-width:767px){
+    .navbar{
+        position: fixed;
+        margin-left: 100px;
+        margin-right: 100px;
+        z-index: 30;
+        background-color: black;
+        opacity: 0.8;
+    }
+    .navbar-brand{
+        color: white !important;
+    }
+    .navbar-toggler{/* this is the nav-bar toggler button which normally display on the mobile view */
+        margin-right: 13px;
+        color: silver !important;
+        background-color: slateblue;
+    }
+    
+    .nav-links{/* it conatains all the links */
+       color: whitesmoke !important;
+       
+    }
+    .nav-item{/* this is the individual "li" tag on the nav bar, which contains its own nav-link */
+        padding: 20px;
+        padding-top: 0px;
+        padding-right: 0px;
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    .nav-link{/*this is the individual link "a" on the nav bar*/
+        color: white !important;
+    }
+    
+    
+    
+    
+    
+    
+    /* this is the left container */
+    .left-container{
+        
+    }
+    .self-description{
+        box-shadow: 0px 0px 5px rgb(58, 57, 57);
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+        position: relative;
+    }
+    .self-description img{
+        margin-left: 20px;
+        border-radius: 100%;
+        width: 80%;
+        
+    }
+    .frontend-dev{
+        color:rgb(219, 216, 216);
+        padding-top: 20px;
+        letter-spacing: 5px;
+    }
+    .social-media-icon-container{
+        margin-top: 30px;
+    }
+    .social-media-icons{
+        font-size: 40px;
+        color: silver;
+        margin-left: 10px;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* this is the right container */
+    .right-container{
+        background-color: hotp;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .addresser{
+        text-align: right;
+        padding-bottom: 10px;
+        
+    }
+    .home{
+        display: none;
+    }
+    .d-block{
+        width: 100%;
+        height: 610px;
+        opacity: 0.5;
+    }
+    #home-text{
+        position: relative;
+        bottom: 200px;
+        text-align: center;
+        font-size: 50px;
+        
+    }
+    
+    
+    
+    .about{
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+        
+    }
+    .section-header{
+        color: silver;
+        font-size: 30px;
+        text-align: center;
+    }
+    .about-open{
+        width: 100%;
+        height: 810px;
+        overflow: hidden;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+    }
+    .about p{
+        font-size: 18px;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    .projects{
+        margin-top: 20px;
+    }
+    .project_set{
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    .each-project{
+        width: 100%;
+        height: 200px;
+        margin-top: 10px;
+    }
+    .each-project a{
+        text-decoration: none;
+    }
+    .first-project{
+        width: 100%;
+        height: 200px;
+    }
+    .second-project{
+        width: 100%;
+        height: 200px;
+    }
+    .project_text{
+        opacity: 0.7;
+        background-color: black;
+        color: white;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+    }
+    .project_text:hover{
+        opacity: 0.7;
+    }
+
+
+
+
+
+    .form-input{
+        width: 90%;
+    }
+   
+}
+
+@media(max-width:280px){
+    .about-open{
+        width: 100%;
+        height: 970px;
+        overflow: hidden;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+    }
+}
