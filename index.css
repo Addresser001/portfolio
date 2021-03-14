@@ -91,8 +91,8 @@ body{
 }
 .self-description{
     box-shadow: 4px 0px 5px rgb(58, 57, 57);
-    width: 29%;
-    padding: 20px 0px 20px 20px;
+    width: 27%;
+    padding: 20px 0px 60px 20px;
     position: fixed;
 }
 .self-description img{
@@ -100,11 +100,12 @@ body{
 }
 .frontend-dev{
     color:rgb(202, 57, 57);
-    padding-top: 20px;
+    padding-top: 5px;
     letter-spacing: 5px;
 }
 .social-media-icon-container{
-    margin-top: 30px;
+    margin-top: 10px;
+    
 }
 .social-media-icons{
     font-size: 40px;
