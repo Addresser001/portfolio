@@ -154,8 +154,8 @@ body{
 
 
 .about{
-    text-align: justify;
-    padding: 50px 20px 10px 20px;
+    text-align:left;
+    padding: 50px 20px 10px 25px;
 }
 .section-header{
     color: silver;
