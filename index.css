@@ -148,51 +148,27 @@ body{
     position: relative;
     bottom: 200px;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 
 
 .about{
-    text-align:center;
+    text-align: justify;
     padding: 50px 20px 10px 20px;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
-    
 }
 .section-header{
     color: silver;
     font-size: 40px;
     text-align: center;
 }
-.about-close{
-    text-align: justify;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-}
-.about-open{
-    text-align: justify;
-    width: 100%;
-    height: 630px;
-    overflow: hidden;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-}
+
 .about p{
     font-size: 25px;
     word-spacing: 3px;
     letter-spacing: 1px;
 }
-#about-button{
-    padding: 10px 30px;
-    margin: 20px 0px;
-    border: 1px solid white;
-    color: white;
-    background-color: black;
-}
+
 
 
 
@@ -379,10 +355,8 @@ body{
 
     
     .about{
-        text-align: center;
+        text-align: justify;
         padding: 50px 10px 10px 10px;
-        border-bottom: 1px solid gray;
-        border-right: 1px solid gray;
         
     }
     .section-header{
@@ -390,25 +364,13 @@ body{
         font-size: 30px;
         text-align: center;
     }
-    .about-open{
-        width: 100%;
-        height: 550px;
-        overflow: hidden;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-out;
-    }
+  
     .about p{
         font-size: 18px;
         word-spacing: 3px;
         letter-spacing: 1px;
     }
-    #about-button{
-        padding: 10px 30px;
-        margin: 20px 0px;
-        border: 1px solid white;
-        color: white;
-        background-color: black;
-    }
+   
     
   
     
@@ -560,27 +522,17 @@ body{
     
     
     .about{
-        text-align: center;
+        text-align: left;
         padding: 10px 10px 10px 10px;
-        border-bottom: 1px solid gray;
-        border-right: 1px solid gray;
-        
     }
     .section-header{
         color: silver;
         font-size: 30px;
         text-align: center;
     }
-    .about-open{
-        width: 100%;
-        height: 968px;
-        overflow: hidden;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-out;
-    }
     .about p{
         font-size: 18px;
-        word-spacing:2px;
+        word-spacing:3px;
         letter-spacing: 1px;
         padding-top: 10px;
     }
