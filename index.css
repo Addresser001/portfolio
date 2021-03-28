@@ -43,6 +43,7 @@ body{
 .container{
     background-color: black;
     color: white;
+    overflow-x: hidden;
 
     
 }
@@ -151,11 +152,24 @@ body{
     font-size: 40px;
 }
 
-
-
 .about{
+    text-align: left;
+    padding: 50px 20px 10px 25px;
+    position: relative;
+    left: 1000px;
+}
+
+.about-out{
     text-align:left;
     padding: 50px 20px 10px 25px;
+    animation-name: aboutMe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes aboutMe{
+    0%{position: relative; left: 1000px;}
+    100%{position: relative; left: 0px;}
 }
 .section-header{
     color: silver;
@@ -163,7 +177,7 @@ body{
     text-align: center;
 }
 
-.about p{
+#about-text{
     font-size: 25px;
     word-spacing: 3px;
     letter-spacing: 1px;
@@ -357,7 +371,18 @@ body{
     .about{
         text-align: justify;
         padding: 50px 10px 10px 10px;
-        
+    }
+    .about-out{
+        text-align:left;
+        padding: 50px 10px 10px 10px;
+        animation-name: aboutMe;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes aboutMe{
+        0%{position: relative; left: 1000px;}
+        100%{position: relative; left: 0px;}
     }
     .section-header{
         color: silver;
@@ -365,7 +390,7 @@ body{
         text-align: center;
     }
   
-    .about p{
+    #about-text{
         font-size: 18px;
         word-spacing: 3px;
         letter-spacing: 1px;
@@ -524,13 +549,27 @@ body{
     .about{
         text-align: left;
         padding: 10px 10px 10px 10px;
+        position: relative;
+        left: 800px;
+    }
+    .about-out{
+        text-align:left;
+        padding: 10px 10px 10px 10px;
+        animation-name: aboutMe;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes aboutMe{
+        0%{position: relative; left: 800px;}
+        100%{position: relative; left: 0px;}
     }
     .section-header{
         color: silver;
         font-size: 30px;
         text-align: center;
     }
-    .about p{
+    #about-text{
         font-size: 18px;
         word-spacing:3px;
         letter-spacing: 1px;
@@ -541,6 +580,17 @@ body{
     
     .projects{
         margin-top: 20px;
+        opacity: 0;
+    }
+    .projectShow{
+        animation-name: projects;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes projects {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
     }
     .project_set{
         justify-content: space-evenly;
