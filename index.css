@@ -1,712 +1,613 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
-*:focus{
-    box-shadow: none !important; 
-    border: 0px;  
-    outline: 0px;
+*:focus {
+  box-shadow: none !important;
+  border: 0px;
+  outline: 0px;
 }
-body{
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
+body {
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
 }
-
-
 
 /* Scroll Bar effect */
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+  width: 20px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    box-shadow: inset 2px 2px 5px grey; 
-    border-radius: 100px;
+  box-shadow: inset 2px 2px 5px grey;
+  border-radius: 100px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background:  silver;
-    box-shadow: inset 1px 1px 2px black;
-    border-radius: 100px;
+  background: silver;
+  box-shadow: inset 1px 1px 2px black;
+  border-radius: 100px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(48, 47, 47); 
+  background: rgb(48, 47, 47);
 }
 
-
-.container{
-    background-color: black;
-    color: white;
-    overflow-x: hidden;
-
-    
+.container {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
 }
-
-
-
-
-
 
 /* Style the header: fixed position (always stay at the top) */
 .header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
 }
-  
+
 /* The progress container (grey background) */
 .progress-container {
-    width: 100%;
-    height: 5px;
-    background: silver;
-    border-radius: 100px;
+  width: 100%;
+  height: 5px;
+  background: silver;
+  border-radius: 100px;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-    height: 5px;
-    background: black;
-    width: 0%;
-    border-radius: 100px;
+  height: 5px;
+  background: black;
+  width: 0%;
+  border-radius: 100px;
 }
-
-
-
-
-
-
-
-
 
 /* this is the left container */
-.left-container{
-    
+.left-container {
 }
-.self-description{
+.self-description {
+  box-shadow: 4px 0px 5px rgb(58, 57, 57);
+  width: 28%;
+  padding: 20px 0px 100px 20px;
+  position: fixed;
+}
+.self-description img {
+  border-radius: 100%;
+  width: 75%;
+}
+.self-description h1 {
+  padding-top: 5px;
+  font-size: 35px;
+}
+.frontend-dev {
+  color: rgb(202, 57, 57);
+  padding-top: 5px;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+.social-media-icon-container {
+  margin-top: 20px;
+}
+.social-media-icons {
+  font-size: 40px;
+  color: silver;
+  margin-left: 10px;
+}
+
+/* this is the right container */
+.right-container {
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.addresser {
+  text-align: right;
+  padding-bottom: 10px;
+}
+.d-block {
+  width: 100%;
+  height: 540px;
+  opacity: 0.5;
+}
+#home-text {
+  position: relative;
+  bottom: 200px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.about {
+  text-align: left;
+  padding: 50px 20px 10px 25px;
+  position: relative;
+  left: 1000px;
+}
+
+.about-out {
+  text-align: left;
+  padding: 50px 20px 10px 25px;
+  animation-name: aboutMe;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes aboutMe {
+  0% {
+    position: relative;
+    left: 1000px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
+}
+.section-header {
+  color: silver;
+  font-size: 40px;
+  text-align: center;
+}
+
+#about-text {
+  font-size: 25px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+.projects {
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 4px double gray;
+}
+.project_set {
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.each-project {
+  width: 45%;
+  height: 260px;
+}
+.each-project a {
+  text-decoration: none;
+}
+.first-project {
+  width: 100%;
+  height: 260px;
+  background-image: url(/images/img-5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second-project {
+  width: 100%;
+  height: 260px;
+  background-image: url(/images/img-6.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third-project {
+  width: 100%;
+  height: 260px;
+  background-image: url(/images/img-7.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourth-project {
+  width: 100%;
+  height: 260px;
+  background-image: url(/images/img-8.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project_text {
+  opacity: 0;
+  width: 100%;
+  height: 260px;
+  font-size: 20px;
+  text-align: left;
+  padding: 0px 20px;
+  padding-top: 0px;
+  text-decoration: none;
+  background-color: black;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.text-details {
+  width: 100%;
+  text-align: center;
+}
+.project_text p {
+  color: white;
+}
+.gitHub {
+  color: white;
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.project_text:hover {
+  opacity: 0.8;
+}
+
+.devTools {
+  justify-items: left;
+  font-size: 15px;
+}
+
+.contact-me {
+  margin-top: 50px;
+}
+#form {
+  width: 100%;
+  text-align: center;
+}
+
+.form-input {
+  width: 70%;
+  height: 40px;
+  background-color: black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.form-button {
+  padding: 10px 50px;
+  margin: 20px 0px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+.copyright {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+/* Tablet view */
+
+@media (max-width: 1023px) {
+  .container {
+    background-color: black;
+    color: white;
+  }
+
+  /* this is the left container */
+  .left-container {
+  }
+  .self-description {
     box-shadow: 4px 0px 5px rgb(58, 57, 57);
-    width: 28%;
-    padding: 20px 0px 100px 20px;
+    width: 29%;
+    padding: 20px 0px 30px 10px;
     position: fixed;
-}
-.self-description img{
+  }
+  .self-description img {
     border-radius: 100%;
-    width: 75%;
-}
-.self-description h1{
-    padding-top: 5px;
-    font-size: 35px;
-}
-.frontend-dev{
-    color:rgb(202, 57, 57);
-    padding-top: 5px;
-    letter-spacing: 3px;
-    font-size: 16px;
-}
-.social-media-icon-container{
-    margin-top: 20px;
-    
-}
-.social-media-icons{
+    width: 80%;
+  }
+  .self-description h1 {
+    font-size: 23px;
+  }
+  .frontend-dev {
+    color: rgb(219, 216, 216);
+    padding-top: 20px;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+  .social-media-icon-container {
+    margin-top: 30px;
+  }
+  .social-media-icons {
     font-size: 40px;
     color: silver;
     margin-left: 10px;
-    
-}
+  }
 
-
-
-
-
-
-
-
-/* this is the right container */
-.right-container{
+  /* this is the right container */
+  .right-container {
+    background-color: hotp;
     margin-top: 10px;
     padding-bottom: 30px;
-    
-}
+  }
 
-.addresser{
+  .addresser {
     text-align: right;
     padding-bottom: 10px;
-    
-}
-.d-block{
+  }
+  .d-block {
     width: 100%;
-    height: 540px;
+    height: 450px;
     opacity: 0.5;
-}
-#home-text{
+  }
+  #home-text {
     position: relative;
-    bottom: 200px;
+    bottom: 100px;
     text-align: center;
-    font-size: 40px;
-}
+    font-size: 34px;
+  }
 
-.about{
+  .about {
+    text-align: justify;
+    padding: 50px 10px 10px 10px;
+  }
+  .about-out {
     text-align: left;
-    padding: 50px 20px 10px 25px;
-    position: relative;
-    left: 1000px;
-}
-
-.about-out{
-    text-align:left;
-    padding: 50px 20px 10px 25px;
+    padding: 50px 10px 10px 10px;
     animation-name: aboutMe;
     animation-timing-function: ease-in-out;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-}
-@keyframes aboutMe{
-    0%{position: relative; left: 1000px;}
-    100%{position: relative; left: 0px;}
-}
-.section-header{
+  }
+  @keyframes aboutMe {
+    0% {
+      position: relative;
+      left: 1000px;
+    }
+    100% {
+      position: relative;
+      left: 0px;
+    }
+  }
+  .section-header {
     color: silver;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-}
+  }
 
-#about-text{
-    font-size: 25px;
+  #about-text {
+    font-size: 18px;
     word-spacing: 3px;
     letter-spacing: 1px;
-}
+  }
 
-
-
-
-
-.projects{
+  .projects {
     margin-top: 40px;
-    padding-bottom: 20px;
-    border-bottom: 4px double gray;
-}
-.project_set{
+  }
+  .project_set {
     justify-content: space-evenly;
-    margin-top: 30px;
-}
-.each-project{
-    width: 45%;
-    height: 260px;
-}
-.each-project a{
+    margin-top: 20px;
+  }
+  .each-project {
+    width: 47%;
+    height: 240px;
+  }
+  .each-project a {
     text-decoration: none;
-}
-.first-project{
+  }
+  .first-project {
     width: 100%;
-    height: 260px;
+    height: 240px;
     background-image: url(/images/img-5.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.second-project{
+  }
+  .second-project {
     width: 100%;
-    height: 260px;
+    height: 240px;
     background-image: url(/images/img-6.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.third-project{
+  }
+  .third-project {
     width: 100%;
-    height: 260px;
+    height: 240px;
     background-image: url(/images/img-7.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.fourth-project{
+  }
+  .fourth-project {
     width: 100%;
-    height: 260px;
+    height: 240px;
     background-image: url(/images/img-8.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.project_text{
-    opacity: 0;
+  }
+
+  .project_text {
+    opacity: 0.8;
     width: 100%;
-    height: 260px;
-    font-size: 20px;
-    text-align: left;
-    padding: 0px 20px;
-    padding-top: 0px;
-    text-decoration:none;
-    background-color: black;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
-}
-.text-details{
+    height: 240px;
+    font-size: 15px;
+  }
+  .text-details {
     width: 100%;
     text-align: center;
-}
-.project_text p{
+  }
+  .project_text p {
     color: white;
-}
-.gitHub{
+  }
+  .gitHub {
     color: white;
-    font-size: 40px;
+    font-size: 23px;
     padding: 0px;
     margin: 0px;
+  }
 }
-
-.project_text:hover{
-    opacity: 0.8;
-}
-
-.devTools{
-    justify-items: left;
-    font-size: 15px;
-}
-
-
-
-
-
-
-.contact-me{
-    margin-top: 50px;
-}
-#form{
-    width: 100%;
-    text-align: center;
-    
-}
-
-.form-input{
-    width: 70%;
-    height: 40px;
-    background-color: black;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid white;
-    color: white;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.form-button{
-    padding: 10px 50px;
-    margin: 20px 0px;
-    border: 1px solid white;
-    color: white;
-    background-color: black;
-}
-
-.copyright{
-    margin-left: 15px;
-    margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-/* Tablet view */
-
-@media(max-width:1023px){
-
-    .container{
-        background-color: black;
-        color: white;
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    /* this is the left container */
-    .left-container{
-        
-    }
-    .self-description{
-        box-shadow: 4px 0px 5px rgb(58, 57, 57);
-        width: 29%;
-        padding: 20px 0px 30px 10px;
-        position: fixed;
-    }
-    .self-description img{
-        border-radius: 100%;
-        width: 80%;
-    }
-    .self-description h1{
-        font-size: 23px;
-    }
-    .frontend-dev{
-        color:rgb(219, 216, 216);
-        padding-top: 20px;
-        letter-spacing: 2px;
-        font-size: 12px;
-    }
-    .social-media-icon-container{
-        margin-top: 30px;
-    }
-    .social-media-icons{
-        font-size: 40px;
-        color: silver;
-        margin-left: 10px;
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    /* this is the right container */
-    .right-container{
-        background-color: hotp;
-        margin-top: 10px;
-        padding-bottom: 30px;
-        
-    }
-    
-    .addresser{
-        text-align: right;
-        padding-bottom: 10px;
-        
-    }
-    .d-block{
-        width: 100%;
-        height: 450px;
-        opacity: 0.5;
-    }
-    #home-text{
-        position: relative;
-        bottom: 100px;
-        text-align: center;
-        font-size: 34px;
-    }
-    
-    
-
-
-    
-    .about{
-        text-align: justify;
-        padding: 50px 10px 10px 10px;
-    }
-    .about-out{
-        text-align:left;
-        padding: 50px 10px 10px 10px;
-        animation-name: aboutMe;
-        animation-timing-function: ease-in-out;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-    @keyframes aboutMe{
-        0%{position: relative; left: 1000px;}
-        100%{position: relative; left: 0px;}
-    }
-    .section-header{
-        color: silver;
-        font-size: 30px;
-        text-align: center;
-    }
-  
-    #about-text{
-        font-size: 18px;
-        word-spacing: 3px;
-        letter-spacing: 1px;
-    }
-   
-    
-  
-    
-    
-    .projects{
-        margin-top: 40px;
-    }
-    .project_set{
-        justify-content: space-evenly;
-        margin-top: 20px;
-    }
-    .each-project{
-        width: 47%;
-        height: 240px;
-    }
-    .each-project a{
-        text-decoration: none;
-    }
-    .first-project{
-        width: 100%;
-        height: 240px;
-        background-image: url(/images/img-5.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .second-project{
-        width: 100%;
-        height: 240px;
-        background-image: url(/images/img-6.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .third-project{
-        width: 100%;
-        height: 240px;
-        background-image: url(/images/img-7.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .fourth-project{
-        width: 100%;
-        height: 240px;
-        background-image: url(/images/img-8.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
- 
-    .project_text{
-        opacity: 0.7;
-        width: 100%;
-        height: 240px;
-        font-size: 15px;
-    }
-    .text-details{
-        width: 100%;
-        text-align: center;
-    }
-    .project_text p{
-        color: white;
-    }
-    .gitHub{
-        color: white;
-        font-size: 23px;
-        padding: 0px;
-        margin: 0px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Mobile view */
-@media(max-width:767px){
-    
-    
-    
-    
-    
-    
-    
-    /* this is the left container */
-    .left-container{
-        
-    }
-    .self-description{
-        box-shadow: 0px 0px 5px rgb(58, 57, 57);
-        width: 100%;
-        padding: 20px 20px 20px 20px;
-        position: relative;
-    }
-    .self-description img{
-        margin-left: 25px;
-        border-radius: 100%;
-        width: 80%;
-        
-    }
-    .self-description h1{
-        padding-top: 5px;
-        font-size: 22px;
-    }
-    .frontend-dev{
-        color:rgb(219, 216, 216);
-        padding-top: 20px;
-        letter-spacing: 2px;
-        font-size: 16px;
-    }
-    .social-media-icon-container{
-        margin-top: 30px;
-    }
-    .social-media-icons{
-        font-size: 40px;
-        color: silver;
-        margin-left: 10px;
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    /* this is the right container */
-    .right-container{
-        background-color: hotp;
-        margin-top: 10px;
-        padding-bottom: 10px;
-        
-    }
-    
-    .addresser{
-        text-align: right;
-        padding-bottom: 10px;
-        
-    }
-    .home{
-        display: none;
-    }
-    .d-block{
-        width: 100%;
-        height: 610px;
-        opacity: 0.5;
-    }
-    #home-text{
-        position: relative;
-        bottom: 200px;
-        text-align: center;
-        font-size: 50px;
-        
-    }
-    
-    
-    
-    .about{
-        text-align: left;
-        padding: 10px 10px 10px 10px;
-        position: relative;
-        left: 800px;
-    }
-    .about-out{
-        text-align:left;
-        padding: 10px 10px 10px 10px;
-        animation-name: aboutMe;
-        animation-timing-function: ease-in-out;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-    @keyframes aboutMe{
-        0%{position: relative; left: 800px;}
-        100%{position: relative; left: 0px;}
-    }
-    .section-header{
-        color: silver;
-        font-size: 30px;
-        text-align: center;
-    }
-    #about-text{
-        font-size: 18px;
-        word-spacing:3px;
-        letter-spacing: 1px;
-        padding-top: 10px;
-    }
-    
-    
-    
-    .projects{
-        margin-top: 20px;
-        opacity: 0;
-    }
-    .projectShow{
-        animation-name: projects;
-        animation-timing-function: ease-in-out;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-    }
-    @keyframes projects {
-        0%{opacity: 0;}
-        100%{opacity: 1;}
-    }
-    .project_set{
-        justify-content: space-evenly;
-        margin-top: 0px;
-    }
-    .each-project{
-        width: 100%;
-        height: 230px;
-        margin-top: 10px;
-    }
-    .each-project a{
-        text-decoration: none;
-    }
-    .first-project{
-        width: 100%;
-        height: 230px;
-    }
-    .second-project{
-        width: 100%;
-        height: 230px;
-    }
-    .third-project{
-        width: 100%;
-        height: 230px;
-    }
-    .fourth-project{
-        width: 100%;
-        height: 230px;
-    }
-   
-    .project_text:hover{
-        opacity: 0.7;
-    }
-    .project_text{
-        width: 100%;
-        height: 230px;
-        font-size: 20px;
-        text-align: left;
-        padding: 0px 20px;
-    }
-    .text-details{
-        width: 100%;
-        text-align: center;
-    }
-    .project_text p{
-        color: white;
-    }
-    .gitHub{
-        color: white;
-        font-size: 25px;
-    }
+@media (max-width: 767px) {
+  /* this is the left container */
+  .left-container {
+  }
+  .self-description {
+    box-shadow: 0px 0px 5px rgb(58, 57, 57);
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+  }
+  .self-description img {
+    margin-left: 25px;
+    border-radius: 100%;
+    width: 80%;
+  }
+  .self-description h1 {
+    padding-top: 5px;
+    font-size: 22px;
+  }
+  .frontend-dev {
+    color: rgb(219, 216, 216);
+    padding-top: 20px;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+  .social-media-icon-container {
+    margin-top: 30px;
+  }
+  .social-media-icons {
+    font-size: 40px;
+    color: silver;
+    margin-left: 10px;
+  }
 
+  /* this is the right container */
+  .right-container {
+    background-color: hotp;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
 
+  .addresser {
+    text-align: right;
+    padding-bottom: 10px;
+  }
+  .home {
+    display: none;
+  }
+  .d-block {
+    width: 100%;
+    height: 610px;
+    opacity: 0.5;
+  }
+  #home-text {
+    position: relative;
+    bottom: 200px;
+    text-align: center;
+    font-size: 50px;
+  }
 
-
-
-    .form-input{
-        width: 90%;
+  .about {
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    left: 800px;
+  }
+  .about-out {
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    animation-name: aboutMe;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes aboutMe {
+    0% {
+      position: relative;
+      left: 800px;
     }
-   
+    100% {
+      position: relative;
+      left: 0px;
+    }
+  }
+  .section-header {
+    color: silver;
+    font-size: 30px;
+    text-align: center;
+  }
+  #about-text {
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+  }
+
+  .projects {
+    margin-top: 20px;
+    opacity: 0;
+  }
+  .projectShow {
+    animation-name: projects;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes projects {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .project_set {
+    justify-content: space-evenly;
+    margin-top: 0px;
+  }
+  .each-project {
+    width: 100%;
+    height: 230px;
+    margin-top: 10px;
+  }
+  .each-project a {
+    text-decoration: none;
+  }
+  .first-project {
+    width: 100%;
+    height: 230px;
+  }
+  .second-project {
+    width: 100%;
+    height: 230px;
+  }
+  .third-project {
+    width: 100%;
+    height: 230px;
+  }
+  .fourth-project {
+    width: 100%;
+    height: 230px;
+  }
+
+  .project_text:hover {
+    opacity: 0.7;
+  }
+  .project_text {
+    width: 100%;
+    height: 230px;
+    font-size: 16px;
+    text-align: left;
+    padding: 0px 20px;
+  }
+  .text-details {
+    width: 100%;
+    text-align: center;
+  }
+  .project_text p {
+    color: white;
+  }
+  .gitHub {
+    color: white;
+    font-size: 25px;
+  }
+
+  .form-input {
+    width: 90%;
+  }
 }
-
-
-
